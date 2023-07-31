@@ -1,0 +1,274 @@
+*, *::before, *::after {
+    margin: 0; /* 外部余白のリセット */
+    padding: 0; /* 内部余白のリセット */
+    box-sizing: border-box; /* widthやheightなどのサイズ指定をボーダーを含んだサイズで指定できるように変更 */
+  }
+
+  .global-nav{
+    font-family: "Georgia", "Hiragino Mincho ProN", sans-serif;
+    padding-top: 20px;
+    padding-left:20px ;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .global-nav h1{
+    font-size: 70px;
+  }
+
+  .global-nav-tab{
+    display: flex;
+    margin-bottom: 50px;
+  }
+
+  .global-nav-tab a{
+    margin-right: 100px;
+    margin-top: 30px;
+    text-decoration: none;
+    color: black;
+  }
+
+.global-nav-image{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh; /* 画面全体の高さに対して要素を広げる */
+  background-image: url(image/federica-galli-aiqKc07b5PA-unsplash.jpg);
+  background-size: contain; /* 背景画像を要素に合わせて調整 */
+  background-repeat: no-repeat; /* 背景画像の繰り返しを無効化 */
+  background-position: center; /* 背景画像を要素の中央に配置 */
+  font-size: 100px;
+  border-radius: 50%; /* 要素全体を角丸にする */
+}
+
+.ABOUT{
+  font-family: "Georgia", "Hiragino Mincho ProN", sans-serif;
+  text-align: center;
+  width: 1000px; /* 幅を適切な値に設定 */
+  height: 300px; /* 高さを適切な値に設定 */
+  margin: 0 auto; /* センタリングのためにmarginを設定 */
+  border-radius: 10px;
+  border: 2px solid black;
+  margin-top: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column; /* 要素を縦に配置する */
+}
+
+.ABOUT .chil {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column; /* 要素を縦に配置する */
+}
+
+.ABOUT .chil h1{
+  font-size: 50px;
+}
+
+.ABOUT .chil h2 {
+  font-size: 30px; /* 適切な文字のサイズを設定 */
+  margin: 30px 0; /* 上下に余白を追加 */
+}
+
+.OPUS{
+  font-family: "Georgia", "Hiragino Mincho ProN", sans-serif;
+  text-align: center;
+  width: 1000px; /* 幅を適切な値に設定 */
+  height: 600px; /* 高さを適切な値に設定 */
+  border-radius: 40px;
+  margin: 0 auto; /* センタリングのためにmarginを設定 */
+  border-radius: 10px;
+  border: 2px solid black;
+  margin-top: 100px;
+}
+
+
+.OPUS h1{
+  font-size: 50px;
+  margin-top: 20px;
+}
+
+.OPUS .OPUS0 {
+  display: flex;
+  justify-content: center;
+  padding: 50px;
+}
+
+.OPUS1{
+  display: grid;
+  place-items: center;
+}
+
+.OPUS1 a{
+  text-decoration: none;
+  margin-top: 20px;
+  font-size: 30px;
+  color: black;
+}
+
+.OPUS1 h3{
+  color: black;
+  padding: 10px; /* 必要に応じて余白を調整します */
+  border-radius: 5px; /* 四角形の角を丸くするための設定 */
+}
+
+.OPUS1 iframe {
+  border-radius: 10px;
+  border: 5px solid black;
+}
+
+.SKILL{
+  font-family: "Georgia", "Hiragino Mincho ProN", sans-serif;
+  text-align: center;
+  width: 1000px; /* 幅を適切な値に設定 */
+  height: 400px; /* 高さを適切な値に設定 */
+  border-radius: 40px;
+  margin: 0 auto; /* センタリングのためにmarginを設定 */
+  border-radius: 10px;
+  border: 2px solid black;
+  margin-top: 100px;
+}
+
+.SKILL h1{
+  font-size: 50px;
+  margin-top: 20px;
+}
+
+.SKILL h2{
+  font-size: 40px;
+  margin: 10px;
+}
+
+.SKILL h3{
+  font-size: 30px;
+}
+
+.CONTACT{
+  font-family: "Georgia", "Hiragino Mincho ProN", sans-serif;
+  text-align: center;
+  width: 1000px; /* 幅を適切な値に設定 */
+  height: 300px; /* 高さを適切な値に設定 */
+  margin: 0 auto; /* センタリングのためにmarginを設定 */
+  border-radius: 10px;
+  border: 2px solid black;
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+
+.CONTACT h1{
+  font-size: 50px;
+  margin-top: 20px;
+}
+
+.CONTACT h2{
+  margin-top: 20px;
+}
+
+.CONTACT ul a{
+  margin-top: 50px;
+  font-size: 30px;
+}
+
+.CONTACT a{
+  text-decoration: none;
+}
+
+
+
+/* メディアクエリ */
+@media screen and (max-width: 896px) {
+.global-nav h1 {
+  font-size: 40px;
+}
+
+
+.global-nav-tab{
+  position: relative; /* テキストの位置を相対的に指定 */
+  right: 255px; /* 左に50ピクセル移動させる */
+  top: 50px; /* 上に20ピクセル移動させる */
+}
+
+.global-nav-tab a {
+  margin-right: 20px; /* マージンを調整 */
+  margin-top: 10px; /* マージンを調整 */
+}
+
+.ABOUT, .OPUS, .SKILL, .CONTACT {
+  width: 100%; /* 幅を100%に調整 */
+  margin: 20px auto; /* センタリングとマージンを調整 */
+}
+
+.ABOUT .chil h1 {
+  font-size: 30px; /* フォントサイズを調整 */
+}
+
+.ABOUT .chil h2 {
+  font-size: 20px; /* フォントサイズを調整 */
+  margin: 20px 0; /* マージンを調整 */
+}
+
+.OPUS h1 {
+  font-size: 30px; /* フォントサイズを調整 */
+  margin-top: 10px; /* マージンを調整 */
+}
+
+.OPUS1 iframe {
+  width: 90%; /* iframeの幅を100%にすることで親要素に合わせる */
+  height: 300px; /* 動画の高さを適切な値に指定 */
+  border-radius: 10px;
+  border: 5px solid black;
+}
+
+.OPUS .OPUS0 {
+  padding: 20px; /* パディングを調整 */
+}
+
+.OPUS1 a {
+  font-size: 20px; /* フォントサイズを調整 */
+  margin-top: 10px; /* マージンを調整 */
+}
+
+.OPUS1 h3 {
+  padding: 5px; /* パディングを調整 */
+}
+
+.OPUS1 iframe {
+  border: 3px solid black; /* ボーダーを調整 */
+}
+
+.SKILL h1 {
+  font-size: 30px; /* フォントサイズを調整 */
+  margin-top: 10px; /* マージンを調整 */
+}
+
+.SKILL h2 {
+  font-size: 20px; /* フォントサイズを調整 */
+  margin: 5px; /* マージンを調整 */
+}
+
+.SKILL h3 {
+  font-size: 20px; /* フォントサイズを調整 */
+}
+
+.CONTACT h1 {
+  font-size: 30px; /* フォントサイズを調整 */
+  margin-top: 10px; /* マージンを調整 */
+}
+
+.CONTACT h2 {
+  margin-top: 10px; /* マージンを調整 */
+}
+
+.CONTACT ul {
+  margin: 20px; /* マージンを調整 */
+}
+}
+
+
+
+
+
+
+

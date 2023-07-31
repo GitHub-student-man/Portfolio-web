@@ -1,0 +1,79 @@
+*, *::before, *::after {
+    margin: 0; /* 外部余白のリセット */
+    padding: 0; /* 内部余白のリセット */
+    box-sizing: border-box; /* widthやheightなどのサイズ指定をボーダーを含んだサイズで指定できるように変更 */
+  }
+
+  .GALLERY{
+    font-family: "Georgia", "Hiragino Mincho ProN", sans-serif;
+    text-align: center;
+  }
+
+  .GALLERY h1{
+    font-size: 70px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+
+  .GALLERY a{
+    text-decoration: none;
+  }
+
+  .GALLERY1{
+    width: 1000px; /* 幅を適切な値に設定 */
+    height: 600px; /* 高さを適切な値に設定 */
+    margin: 0 auto; /* センタリングのためにmarginを設定 */
+    border-radius: 10px;
+    border: 2px solid black;
+  }
+
+  .GALLERY1 img{
+    margin-top: 50px;
+    border-radius: 10px;
+    border: 5px solid black;
+  }
+
+  .GALLERY1 h2{
+    font-size: 50px;
+  }
+
+  .GALLERY1 h3{
+    font-size: 20px;
+  }
+
+  .GALLERY2 {
+    width: 1000px; /* 幅を適切な値に設定 */
+    height: 600px; /* 高さを適切な値に設定 */
+    margin: 0 auto; /* センタリングのためにmarginを設定 */
+    border-radius: 10px;
+    border: 2px solid black;
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+
+  .GALLERY2 img{
+    margin-top: 50px;
+    border-radius: 10px;
+    border: 5px solid black;
+  }
+
+  .GALLERY2 h2{
+    font-size: 50px;
+  }
+
+  .GALLERY2 h3{
+    font-size: 20px;
+  }
+
+  @media screen and (max-width: 896px) {
+    .GALLERY1, .GALLERY2 {
+      width: calc(100% - 40px); /* 左右に20pxの余白を設定 */
+      margin: 20px auto; /* 上下に20pxの余白を設定 */
+    }
+  
+    .GALLERY1 img, .GALLERY2 img {
+      max-width: 80%; /* 画像の最大幅を100%に設定 */
+      height: auto; /* 高さは自動調整 */
+      border: 5px solid black; /* 画像の枠線を再設定 */
+    }
+  }
